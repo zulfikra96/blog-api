@@ -18,3 +18,7 @@ $router->get('/',function(){
     
     return ["zulfikra" => "lahmudin"];
 });
+
+// authentication
+$router->get('/login','AuthController@login');
+$router->post('/register','AuthController@register');
